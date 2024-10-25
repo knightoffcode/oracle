@@ -1,5 +1,7 @@
 .faq__container {
     padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section__item {
@@ -13,6 +15,8 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 8px;
+    text-align: center;
+    color: black;
 }
 
 .item__description {

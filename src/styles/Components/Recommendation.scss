@@ -1,8 +1,15 @@
+.recommendation {
+    background-image: url("/Home/bg.png");
+    background-size: cover;
+}
+
 .recommendation__container {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .recommendation__item {
@@ -15,9 +22,9 @@
 }
 
 .item__image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    // width: 50px;
+    // height: 50px;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
@@ -28,11 +35,14 @@
 .content__name {
     font-size: 1.1rem;
     font-weight: bold;
+    margin: 0 0 1rem;
 }
 
 .content__description {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.5rem;
+    max-width: 500px;
 }
 
 .item__info {
@@ -43,8 +53,11 @@
 }
 
 .info__free-time {
-    font-size: 0.9rem;
-    color: #4caf50;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: red;
+    padding: 8px 12px;
+    border-radius: .5rem;
 }
 
 .info__price {
@@ -63,6 +76,7 @@
     border-radius: 4px;
     cursor: pointer;
     color: white;
+    width: 100%;
 }
 
 .info__button-call {
