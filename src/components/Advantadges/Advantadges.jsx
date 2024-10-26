@@ -7,25 +7,25 @@ function Advantadges() {
             id: 1,
             icon: <FaCheckCircle />,
             title: 'Quality Service',
-            description: 'We ensure the best quality in all our services to meet your needs.',
+            description: 'We ensure the best quality in all our services to meet your needs. We ensure the best quality in all our services to meet your needs.',
         },
         {
             id: 2,
             icon: <FaStar />,
             title: 'Customer Satisfaction',
-            description: 'Our top priority is to ensure customer satisfaction through excellence.',
+            description: 'Our top priority is to ensure customer satisfaction through excellence. Our top priority is to ensure customer satisfaction through excellence.',
         },
         {
             id: 3,
             icon: <FaRocket />,
             title: 'Fast Response',
-            description: 'Quick and efficient response to save your time and provide solutions.',
+            description: 'Quick and efficient response to save your time and provide solutions. Quick and efficient response to save your time and provide solutions.',
         },
     ];
 
     return (
         <div className="advantadges__container">
-            <h2 className="container__title">Our Advantages</h2>
+            <h2 className="container__title">Why private oracle?</h2>
             <div className="container__cards">
                 {advantadges.map((item) => (
                     <div key={item.id} className="card__item">

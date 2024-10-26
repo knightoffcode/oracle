@@ -1,5 +1,5 @@
 .faq__container {
-    padding: 16px;
+    padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -7,16 +7,15 @@
 .section__item {
     margin-bottom: 32px;
     padding: 16px;
-    border: 1px solid #ccc;
     border-radius: 8px;
+    text-align: center;
 }
 
 .item__title {
     font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 8px;
+    font-weight: 400;
+    margin-bottom: 2rem;
     text-align: center;
-    color: black;
 }
 
 .item__description {
@@ -27,13 +26,15 @@
 
 .item__questions {
     display: flex;
-    gap: 16px;
+    gap: 2rem;
     margin-bottom: 16px;
+    justify-content: space-evenly;
 }
 
 .questions__column {
     display: flex;
     flex-direction: column;
+    text-align: left;
     gap: 8px;
 }
 
@@ -53,6 +54,16 @@
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s;
+    text-align: center;
+    padding: 1rem 0 0;
+
+    button {
+        background-color: unset;
+        border: 1px solid #007bff;
+        color: #007bff;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+    }
 }
 
 .item__read-more:hover {

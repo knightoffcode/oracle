@@ -1,8 +1,10 @@
 .header {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   z-index: 3;
   padding: 0 0 0.1rem;
-  background-color: rgb(255, 255, 255);
 
   &__wrapper {
     max-width: 1200px;
@@ -44,7 +46,7 @@
 
   &__list {
     display: inline-flex;
-    gap: .5rem;
+    gap: 2rem;
 
     @media (max-width: 576px) {
       display: none;
@@ -89,8 +91,14 @@
 
   &__link {
     text-decoration: none;
-    color: $font-black;
-    font-size: $default-font-size;
+    color: #09B3B0;
+    font-size: 1.1rem;
+
+    .active {
+      a {
+        border-bottom: 2px solid #FF9F00;
+      }
+    }
 
     &__icon {
       margin: 0 0.5rem -3px 0;
@@ -125,11 +133,12 @@
 
     &--user {
       padding: .5rem 1rem;
-      background-color: orange;
+      background-color: #09B3B0;
       border-radius: .5rem;
       font-size: $default-font-size;
       display: inline-flex;
       align-items: center;
+      color: white;
 
     }
     &--search {
@@ -138,7 +147,8 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      background-color: orange;
+      background-color: #09B3B0;
+      color: white;
       border-radius: 50%;
 
       svg {
@@ -223,7 +233,7 @@
       display: inline-flex;
       justify-content: end;
       flex-grow: 1;
-      gap: 2rem;
+      gap: 2.5rem;
     }
 
     &__recent {

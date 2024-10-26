@@ -5,7 +5,7 @@ function FAQ() {
         {
             id: 1,
             title: 'Love, Relationship & Life FAQ',
-            description: 'Here are some frequently asked questions about love, relationships, and life advice.',
+            description: 'Here are some frequently asked questions about love, relationships, and life advice. Here are some frequently asked questions about love, relationships, and life advice. Here are some frequently asked questions about love, relationships, and life advice. Here are some frequently asked questions about love, relationships, and life advice.',
             questions: [
                 { id: 1, question: 'How can I improve my relationship?' },
                 { id: 2, question: 'What is the best way to handle a breakup?' },
@@ -16,7 +16,7 @@ function FAQ() {
         {
             id: 2,
             title: 'Career & Financial FAQ',
-            description: 'Frequently asked questions to help guide your career and financial decisions.',
+            description: 'Frequently asked questions to help guide your career and financial decisions. Frequently asked questions to help guide your career and financial decisions Frequently asked questions to help guide your career and financial decisions. Frequently asked questions to help guide your career and financial decisions.',
             questions: [
                 { id: 1, question: 'How do I advance in my career?' },
                 { id: 2, question: 'What are some tips for saving money?' },
@@ -48,7 +48,9 @@ function FAQ() {
                             ))}
                         </div>
                     </div>
-                    <a href="#" className="item__read-more">Read More</a>
+                    <div className="item__read-more">
+                        <button href="#" className="">Read More</button>
+                    </div>
                 </div>
             ))}
         </div>

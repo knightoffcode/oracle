@@ -16,7 +16,7 @@
     display: flex;
     gap: 16px;
     padding: 16px;
-    border: 1px solid #ccc;
+    // border: 1px solid #ccc;
     border-radius: 8px;
     align-items: center;
 }
@@ -30,6 +30,7 @@
 
 .item__content {
     flex-grow: 1;
+    padding: 1rem 0;
 }
 
 .content__name {
@@ -49,13 +50,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 8px;
+    gap: .8rem;
 }
 
 .info__free-time {
     font-size: 0.8rem;
     color: #fff;
-    background-color: red;
+    background-color: #09B3B0;
     padding: 8px 12px;
     border-radius: .5rem;
 }
@@ -69,7 +70,8 @@
 .info__button-chat {
     display: flex;
     align-items: center;
-    gap: 4px;
+    justify-content: center;
+    gap: .5rem;
     padding: 8px 12px;
     font-size: 0.9rem;
     border: none;
@@ -80,9 +82,9 @@
 }
 
 .info__button-call {
-    background-color: #007bff;
+    background-color: #FF9F00;
 }
 
 .info__button-chat {
-    background-color: #555;
+    background-color: #09B3B0;
 }

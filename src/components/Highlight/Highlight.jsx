@@ -19,23 +19,12 @@ function Highlight() {
             id: '7654567534',
             name: 'null',
             order: 1,
-            url: 'https://placeholder.co/1700x600',
-            link: null
+            url: '/Home/Highlight/H1.png',
+            link: null,
+            title: 'Find your peace',
+            description: 'Insight to norish your spiritual path',
+            buttonText: '$1/min'
         },
-        {
-            id: '7654567534',
-            name: 'null',
-            order: 2,
-            url: 'https://placeholder.co/1700x600',
-            link: null
-        },
-        {
-            id: '7654567534',
-            name: 'null',
-            order: 3,
-            url: 'https://placeholder.co/1700x600',
-            link: null
-        }
     ]
 
     const sliderSettings = {
@@ -43,7 +32,7 @@ function Highlight() {
         slidesToScroll: 1,
         speed: 500,
         infinite: false,
-        dots: true,
+        dots: false,
         centerMode: false,
         autoplay: true,
         autoplaySpeed: 3000
@@ -55,19 +44,21 @@ function Highlight() {
                     <FaAngleDown className='banner__tip__icon' />
                 </div>
                 <Slider {...sliderSettings}>
-                    {
-                        banners
-                            ?
-                            (
-                                banners.map((banner, index) => (
-                                    <div className='banner' key={index}>
-                                        <img className='banner__image' src={banner.url} alt={banner.name} />
+                    {banners
+                        ? banners.map((banner, index) => (
+                            <div className='banner' key={index}>
+                                <div className='banner__content'>
+                                    <div className='banner__text'>
+                                        <h1 className='banner__title'>{banner.title}</h1>
+                                        <p className='banner__description'>{banner.description}
+                                        </p>
+                                            <button className='banner__button'>{banner.buttonText}</button>
                                     </div>
-                                ))
-                            )
-                            :
-                            null
-                    }
+                                    <img className='banner__image' src={banner.url} alt={banner.name} />
+                                </div>
+                            </div>
+                        ))
+                        : null}
                 </Slider>
             </div>
         </div>

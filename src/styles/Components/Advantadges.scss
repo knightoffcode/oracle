@@ -1,5 +1,5 @@
 .advantadges__container {
-    padding: 16px;
+    padding: 4rem 1rem;
     text-align: center;
     background-color: #c5e0e2;
 }
@@ -47,14 +47,17 @@
 .item__description {
     font-size: 0.9rem;
     color: #000000;
-    margin-bottom: 12px;
+    text-align: left;
+    margin: 1rem 0;
+    line-height: 1.2rem;
 }
 
 .item__read-more {
     color: #0099A8;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
     transition: color 0.3s;
+    font-size: .9rem;
 }
 
 .item__read-more:hover {
