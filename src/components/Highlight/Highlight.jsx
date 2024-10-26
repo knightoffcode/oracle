@@ -1,11 +1,8 @@
 import React from 'react'
 
 import Slider from 'react-slick'
-import { FaAngleDown } from 'react-icons/fa'
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 
 /**
  *
@@ -25,7 +22,7 @@ function Highlight() {
             description: 'Insight to norish your spiritual path',
             buttonText: '$1/min'
         },
-    ]
+    ];
 
     const sliderSettings = {
         slidesToShow: 1,
@@ -36,13 +33,11 @@ function Highlight() {
         centerMode: false,
         autoplay: true,
         autoplaySpeed: 3000
-    }
+    };
+
     return (
         <div className="banner__head">
             <div className='banner__wrapper'>
-                <div className='banner__tip'>
-                    <FaAngleDown className='banner__tip__icon' />
-                </div>
                 <Slider {...sliderSettings}>
                     {banners
                         ? banners.map((banner, index) => (
@@ -64,7 +59,7 @@ function Highlight() {
                 </Slider>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Highlight
+export default Highlight;

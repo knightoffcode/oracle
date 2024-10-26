@@ -1,8 +1,9 @@
-import React from 'react'
-import Highlight from '../../components/Highlight/Highlight'
-import Recommendation from '../../components/Recommendation/'
-import Advantadges from '../../components/Advantadges/'
-import FAQ from '../../components/FAQ/'
+import React from 'react';
+import Highlight from '../../components/Highlight/Highlight';
+import Recommendation from '../../components/Recommendation/';
+import Advantadges from '../../components/Advantadges/';
+import FAQ from '../../components/FAQ/';
+import { Fade } from 'react-awesome-reveal';
 
 /**
  *
@@ -10,14 +11,17 @@ import FAQ from '../../components/FAQ/'
  */
 
 function Home() {
+    
     return (
         <div className='home-page'>
-            <Highlight />
-            <Recommendation />
-            <Advantadges />
-            <FAQ />
+             <Fade cascade damping={0.2}>
+                <Highlight />
+                <Recommendation />
+                <Advantadges />
+                <FAQ />
+             </Fade>
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

@@ -9,7 +9,7 @@ function Recommendation() {
             description: 'help with all matters of life. Such as Love Health happiness, and Career. I will also give you, sense of direction. I am a Life coach, My readings come directly from the heart I do not sugarcoat, I am nonjudgmental. all of my readings are private and confidential. I will lead you and guide you to your hearts desires.',
             freeTime: 'First 3 minutes Free',
             price: '$5.00/min',
-            imageUrl: 'https://placeholder.co/150', // URL de exemplo para imagem
+            imageUrl: 'https://placeholder.co/150',
         },
         {
             id: 2,
@@ -54,6 +54,6 @@ function Recommendation() {
             </div>
         </div>
     );
-}
+};
 
 export default Recommendation;
