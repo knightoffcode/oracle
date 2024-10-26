@@ -10,13 +10,13 @@
     padding: 16px;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .recommendation__item {
     display: flex;
     gap: 16px;
     padding: 16px;
-    // border: 1px solid #ccc;
     border-radius: 8px;
     align-items: center;
 }

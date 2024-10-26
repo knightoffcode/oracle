@@ -49,10 +49,12 @@ function Highlight() {
                             <div className='banner' key={index}>
                                 <div className='banner__content'>
                                     <div className='banner__text'>
+                                        <div className="banner__text__container">
                                         <h1 className='banner__title'>{banner.title}</h1>
                                         <p className='banner__description'>{banner.description}
                                         </p>
                                             <button className='banner__button'>{banner.buttonText}</button>
+                                        </div>
                                     </div>
                                     <img className='banner__image' src={banner.url} alt={banner.name} />
                                 </div>

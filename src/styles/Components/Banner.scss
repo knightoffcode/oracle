@@ -157,12 +157,12 @@
     }
   }
 
-  &__description {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    line-height: 15px;
-  }
+  // &__description {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  //   line-height: 15px;
+  // }
 
   &__name {
     display: block;
@@ -406,9 +406,9 @@
 }
 
 .banner__title {
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 400;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   width: 400px;
   color: #FF9F00;
   text-transform: uppercase;
@@ -419,8 +419,15 @@
   color: #555;
   margin-bottom: 20px;
   text-transform: uppercase;
+  text-align: center !important;
 }
 
+.banner__text__container {
+  width: 400px;
+  text-align: center;
+
+
+}
 .banner__button {
   padding: 10px 20px;
   font-size: 2rem;
@@ -431,8 +438,4 @@
   transition: background-color 0.3s;
   color: #FF9F00;
   text-transform: uppercase;
-}
-
-.banner__button:hover {
-  background-color: #0056b3;
 }
